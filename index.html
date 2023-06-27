@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderStories</title>
+</head>
+<link rel="stylesheet" href="home.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" id="navlogo">
+              
+                <img src="images/WS-removebg-preview.png" alt="error">
+                </a>
+              
+            <div class="menuBar">
+              <ul>
+                <!-- <li><a href="/index.html">HOME</a></li> -->
+                <!-- <li><a href="/nearesthospital.html">SEARCH</a></li> -->
+                <!-- <li><a href="#about">ABOUT</a></li> -->
+                <!-- <li><a href="./skills.html">SKILLS</a></li> -->
+                <!-- <li><a href="/contact.html">CONTACT</a></li> -->
+               <!-- <li><a href="/signUp.html" id="signupnavbutton">SIGN UP</a></li>  -->
+                <!-- <li><a href="/login.html" id="loginNavButton">LOGIN</a></li> -->
+                <button onclick="connectMetamask()" id="metamask">CONNECT WALLET</button> <br>
+    <!-- <p id="accountArea"></p> -->
+              </ul>
+            </div>
+          </nav>
+        <main class="hero">
+            <div class="intro">Welcome to WanderStories</div>
+            <div class="discription">
+                Don't be a Tourist, Be a Traveller
+            </div>
+            <div class="buttons">
+                <a href="blogerhome.html"> <button class="btnh">narrate</button></a>
+<a href="explore.html"><button class="btnh">Explore</button></a>
+                
+            </div>
+        </main>
+    </header>
+    <!-- <footer>
+        <div class="footer">
+          <div class="columns">
+            <div class="footerlogo">
+              <img src="/images/logo.png" alt="error">
+            </div>
+            <div class="footheading">Contact</div>
+            <div class="contactdetail">
+              <div class="title">Address:</div>
+              <div class="detail">
+                54-B,Saraswati vihar,Kalwar Road,jhotwara,jaipur
+              </div>
+            </div>
+            <div class="contactdetail">
+              <div class="title">Phone:</div>
+              <div class="detail">6367559610</div>
+            </div>
+            <div class="contactdetail">
+              <div class="title">Email:</div>
+              <div class="detail">lakhan06gupta@gmail.com</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="footheading">About</div>
+  
+            <a href="#about" style="text-decoration: none;"><div class="detail">About us</div></a>
+  
+            <div class="detail">Privacy Policy</div>
+  
+            <div class="detail">Terms & Conditions</div>
+            <a href="/contact.html" style="text-decoration: none;"><div class="detail">Contact Us</div></a>
+          </div>
+          <div class="columns">
+            <div class="footheading">My Account</div>
+  
+            <a href="/signup.html" style="text-decoration: none;"><div class="detail">Sign Up</div></a>
+  
+            <a href="/login.html" style="text-decoration: none;" ><div class="detail">Login</div></a>
+  
+            <div class="detail">Help</div>
+            
+          </div>
+        </div>
+      </footer> -->
+</body>
+<script>
+let account;
+  const connectMetamask = async () => {
+      if(window.ethereum !== "undefined") {
+          const accounts = await ethereum.request({method: "eth_requestAccounts"});
+          account = accounts[0];
+          document.getElementById("accountArea").innerHTML = account;
+      }
+  }</script>
+</html>

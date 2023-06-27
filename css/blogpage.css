@@ -1,0 +1,19 @@
+.blogmain{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+
+}
+.left{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+
+}
+
+.placetitle{
+    font-size: 2rem;
+    
+}

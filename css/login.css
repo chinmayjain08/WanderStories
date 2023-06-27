@@ -1,0 +1,212 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: rgba(255, 255, 255, 0.8);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.8);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 15px 0;
+}
+
+body {
+  background-image: url(/images/hero_1.jpg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /*   height: 100vh; */
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/* overlay */
+body::before {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  /* background-color: transparent; */
+}
+
+.box {
+  width: 350px;
+  background: transparent;
+  color: white;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 500ms;
+}
+
+#signup,
+#login {
+  padding: 22px;
+}
+
+/* close button styling */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 20%);
+  transition: 500ms;
+}
+
+.close:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.social-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.social-login:hover {
+  background-color: rgb(169 169 169 / 50%);
+  transition: 500ms background-color ease-in-out;
+}
+
+.google {
+  fill: rgb(255 255 255 / 80%);
+}
+
+.field {
+  margin: 5px 0;
+}
+
+.field a {
+  color: #82DBD8;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin: 5px 0;
+  padding: 8px;
+  font-size: 18px;
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: none;
+  color: white;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="password"]:focus-visible {
+  border-color: #82DBD8;
+  outline: 1px solid #82DBD8;
+}
+
+label:not(label:last-child) {
+  font-weight: bold;
+}
+
+.button {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 15px 0 0;
+  cursor: pointer;
+  background-color: #82DBD8;
+  color: white;
+  font-weight: bold;
+}
+.loga{
+text-decoration: none;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px 0 10px;
+  gap: 10px;
+}
+.foot a{
+    text-decoration: none;
+}
+
+.login,
+.signup {
+  cursor: pointer;
+  color: #82DBD8;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 715px) {
+  body,
+  body::before {
+    height: 1200px;
+  }
+}

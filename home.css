@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* letter-spacing: 0.1rem */
+  /* width: 100vw; */
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'League Spartan', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /* -----headwr---------------------------- */
+
+  .navbar {
+    /* background-color: #f5fbff; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    
+    /* padding: 1.6rem; */
+    width: 100%;
+    /* height: 10vh; */
+    /* padding: 2rem; */
+  }
+  
+  #navlogo img{
+    margin-left: 5rem;
+    width: 8rem;
+    /* filter: invert(100%); */
+  }
+  
+
+  ul {
+    /* width: 40%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  ul li {
+    text-transform: uppercase;
+    list-style: none;
+    /* margin-right: 5rem; */
+  }
+  
+  .navbar ul li a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color:  #5dd4ce;
+    scroll-behavior: smooth;
+  }
+  .navbar ul li a:hover {
+    /* text-shadow:2px 3px 4px black; */
+    /* font-size: 1.6rem; */
+    /* color: #0487d8; */
+  }
+  
+  #loginNavButton{
+    cursor: pointer;
+    text-transform: uppercase;
+    /* font-size: 1; */
+    /* letter-spacing: .2em; */
+    color: #f8f9fa;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid white;
+    border-width: 2px;
+    border-color: #f8f9fa;
+    padding: 2rem;
+    outline: none;
+    box-shadow: none !important;
+   padding: 1rem;
+   
+    border-radius: 4px;
+    
+    /* margin-left: 110rem; */
+    text-decoration: none;
+  }
+  #loginNavButton:hover{
+    background-color: white;
+    color: black;
+  }
+  #signupnavbutton{
+    margin-right: 5rem;
+   
+    cursor: pointer;
+    text-transform: uppercase;
+    /* font-size: 1; */
+    /* letter-spacing: .2em; */
+    color: #f8f9fa;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid white;
+    border-width: 2px;
+    border-color: #f8f9fa;
+    padding: 2rem;
+    outline: none;
+    box-shadow: none !important;
+   padding: 1rem;
+   
+    border-radius: 4px;
+    
+    text-decoration: none;
+    
+  }
+  #metamask{
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    /* font-size: 1; */
+    /* letter-spacing: .2em; */
+    color: #f8f9fa;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid orange;
+    border-width: 2px;
+    /* border-color: #f8f9fa; */
+    padding: 2rem;
+    outline: none;
+    box-shadow: none !important;
+    padding: 1rem;
+    background-color: orange;
+    
+    border-radius: 4px;
+    
+    /* margin-left: 110rem; */
+    text-decoration: none;
+    /* margin-left: 3rem; */
+    margin-left: 110rem;
+
+  }
+  /* #metamask:hover{
+    background-color: white;
+    color: black;
+
+  } */
+
+  #signupnavbutton:hover{
+    background-color: white;
+    color: black;
+  }
+
+  header::before{
+    content: " ";
+    position: absolute;
+    background: url(images/hero_1.jpg.webp) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+    filter:brightness(80%);
+    /* background-color: rgba(0, 0, 0, 0.2); */
+  }
+
+
+  .hero{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 2rem;
+    height: 80vh;
+    /* background-color: #000; */
+  }
+
+  .intro{
+    margin-top: 19rem;
+    font-size: 80px;
+    font-family: "Abril Fatface", times, serif;
+    color: #fff;
+    /* line-height: 1; */
+    /* font-weight: bold; */
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    
+    /* text-transform: uppercase; */
+  }
+
+  .discription{
+
+    /* font-size: 4rem; */
+    text-align: center;
+    width: 60%;
+    margin-bottom: 5rem;
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 1.5
+
+  }
+
+  .btnh{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: .2em;
+    color: #f8f9fa;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid white;
+    border-width: 2px;
+    border-color: #f8f9fa;
+    padding: 2rem;
+    outline: none;
+    box-shadow: none !important;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+    border-radius: 4px;
+    margin-right: 2rem;
+  }
+
+ .btnh:hover{
+    background-color: white;
+    color: black;
+  }
+
+  
+
+
+  /* ------------------------------------------------------------------------footer ---------------------------------------------------------*/
+  .footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* padding: 2rem 0rem; */
+    background-color: #f5fbff;
+  }
+  
+  .columns{
+    display: flex;
+    justify-content:center ;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  
+  /* .footerlogo img{
+    width: 6rem;
+  } */
+
+  .footlogo img{
+    width: 12rem;
+  }
+  .footheading{
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title{
+    color: black;
+    font-size: 1.5rem ;
+    font-weight: bold;
+    
+  }
+  .detail{
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #303030;
+  }
+  
+  .copyright{
+    padding: 2rem;
+    background-color: #f5fbff;
+    color: #525252;
+    text-align: center;
+    font-size: 2rem;
+  }

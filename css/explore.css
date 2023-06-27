@@ -1,0 +1,133 @@
+
+/* -----------navbar----------------------- */
+
+.navbarexplore{
+
+  display: flex;
+  /* justify-content:space-around ; */
+  align-items: center;
+  /* padding: 2rem; */
+  background-color: #2F8F9D;
+
+}
+
+.menuBarexplore ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-left: 70rem;
+}
+#navlogoexplore{
+  margin-left: 8rem;
+
+}
+
+#navlogoexplore img{
+  width: 8rem;
+}
+
+.navbarexplore ul li a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color:  white;
+  scroll-behavior: smooth;
+  margin: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------card part--------------------------- */
+.card_container {
+  display: flex;
+  padding: 50px 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 60%; */
+}
+.card {
+  margin: 25px;
+  width: 25rem;
+}
+
+.citytitle {
+  font-size: 2.5rem;
+}
+.card-text {
+  font-size: 1.5rem;
+}
+.card a {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: white;
+  border: 2px solid #2F8F9D;
+  color: black;
+}
+
+.card a:hover{
+  background-color: #2F8F9D;
+  color: white;
+  border: 2px solid #87d9d5;
+}
+.img img{
+  width:50rem;
+}
+
+.search {
+  display: flex;
+  /* justify-content; */
+  align-items: center;
+  height: 89vh;
+  /* padding: 4rem; */
+  margin-left: 20rem;
+}
+.searchbar{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-right: 30rem;
+  flex-direction: column;
+}
+.searchbar input {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 2px solid lightgray;
+  /* background-color: pink; */
+  border-radius: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40rem;
+  margin-bottom: 1rem;
+}
+.searchbar img{
+  width: 40rem;
+  margin-bottom: 1rem;
+}
+
+
+.btnsearch {
+  padding: 0.7rem;
+  border: 2px solid #2F8F9D;
+  font-size: 1.5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background-color: #2F8F9D;
+  color: white;
+}
+.heading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  background-color: #82DBD8;
+}
